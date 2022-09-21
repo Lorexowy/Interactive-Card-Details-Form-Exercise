@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <img class="background-gradient" src="images/bg-main-desktop.png" alt="Background gradient">
+
+
+  <div class="card-front">
+    <img src="images/bg-card-front.png" alt="Card Front" />
+      <div class="card-front-text">
+        <h1><img src="images/card-logo.svg" alt="Card Logo" /></h1>
+        <h2>0000 0000 0000 0000</h2>
+        <h3>Jane Appleseed</h3>
+        <h4>00/00</h4>
+      </div>
+  </div>
+  <div class="card-back">
+    <img src="images/bg-card-back.png" alt="Card Back">
+      <div class="card-back-text">
+        <h1>000</h1>
+      </div>
+  </div>
+
+<div class="container">
+
+  <form action="">
+    <div class="inputBox">
+      <span>CARDHOLDER NAME</span>
+      <input type="text" class="card-holder-input" onfocus="this.value=''" onblur="this.value='e.g Jane Appleseed'" value="e.g Jane Appleseed">
+    </div>
+    <div class="inputBox">
+      <span>CARD NUMBER</span>
+      <input type="text" class="card-number-input">
+    </div>
+    <div class="flexbox">
+      
+      <div class="inputBox">
+        <span>EXP. DATE (MM/YY)</span>
+        <div class="flexbox">
+          <input type="text" class="month-input" id="month">
+          <input type="text" class="year-input" id="year">
+        </div>
+      </div>
+
+      <div class="inputBox">
+        <span>CVC</span>
+        <input type="text" class="card-number-input">
+      </div>
+
+    </div>
+  </form>
+
+</div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mateusz Michel</a>.
+  </div>
+</body>
+</html>
